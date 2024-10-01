@@ -1,0 +1,71 @@
+Tugas 4 ini akan membandingkan antara Queue dan Stack (Tumpukan) dalam konteks struktur data, 
+terutama dalam hal karakteristik, penggunaan, dan operasi-operasi yang mendefinisikan keduanya.
+
+ Queue (Antrian):
+
+1. Karakteristik:
+
+   - FIFO (First-In-First-Out): Elemen pertama yang dimasukkan (enqueue) adalah yang pertama kali keluar (dequeue).
+   - Contoh umum: antrian di kasir, antrian di sistem komputer untuk mengeksekusi proses.
+
+2. Operasi Utama:
+
+   - enqueue(item): Memasukkan elemen ke dalam antrian.
+   - dequeue(): Menghapus dan mengembalikan elemen pertama dari antrian.
+   - peek(): Melihat elemen pertama tanpa menghapusnya.
+   - isEmpty(): Memeriksa apakah antrian kosong.
+   - size(): Mengembalikan jumlah elemen dalam antrian.
+
+
+3. Implementasi:
+
+   - Dapat diimplementasikan menggunakan struktur data seperti linked list, array, atau dengan menggunakan 
+   collections seperti `java.util.Queue` di Java.
+
+ Stack (Tumpukan):
+
+1. Karakteristik:
+   - LIFO (Last-In-First-Out): Elemen terakhir yang dimasukkan (push) adalah yang pertama kali keluar (pop).
+   - Contoh umum: tumpukan buku di meja, fungsi pemanggilan dalam rekursi.
+
+2. Operasi Utama:
+   - push(item): Memasukkan elemen ke dalam tumpukan.
+   - pop(): Menghapus dan mengembalikan elemen teratas dari tumpukan.
+   - peek(): Melihat elemen teratas tanpa menghapusnya.
+   - isEmpty(): Memeriksa apakah tumpukan kosong.
+   - size(): Mengembalikan jumlah elemen dalam tumpukan.
+
+3. Implementasi:
+
+   - Dapat diimplementasikan menggunakan struktur data seperti linked list, array, atau dengan menggunakan collections 
+   seperti `java.util.Stack` di Java. Namun, lebih sering digunakan adalah menggunakan `Deque` dengan operasi 
+   khusus untuk stack (`push()` dan `pop()`).
+
+ Perbandingan Antara Queue dan Stack:
+
+1. Penggunaan:
+
+   - Queue cocok digunakan ketika Anda ingin mengatur elemen dalam urutan tertentu seperti antrian yang harus diproses sesuai urutan masuknya.
+   - Stack cocok digunakan untuk masalah yang memerlukan proses berbasis hierarki atau pemanggilan balik (recursion).
+
+2. Urutan Keluar:
+
+   - Queue mengeluarkan elemen berdasarkan urutan FIFO, sedangkan Stack mengeluarkan elemen berdasarkan urutan LIFO.
+
+
+
+3. Penggunaan dalam Implementasi:
+
+   - Queue dan Stack dapat diimplementasikan dengan struktur data yang sama (misalnya, menggunakan linked list atau array), 
+   dengan perbedaan pada operasi-operasi yang didefinisikan.
+
+4. Kompleksitas Waktu:
+
+   - Kedua struktur data ini memiliki kompleksitas waktu yang efisien untuk operasi dasar seperti enqueue, dequeue (untuk Queue) 
+   dan push, pop (untuk Stack), tergantung pada implementasi yang dipilih.
+
+Kesimpulan:
+
+    Queue dan Stack adalah dua struktur data yang fundamental dengan karakteristik FIFO dan LIFO masing-masing. Pemilihan antara keduanya 
+tergantung pada kebutuhan aplikasi atau algoritma yang sedang dikerjakan. Implementasi keduanya dapat dilakukan dengan berbagai cara, 
+baik menggunakan struktur data bawaan dalam bahasa pemrograman seperti Java atau dengan implementasi khusus menggunakan array atau linked list.
